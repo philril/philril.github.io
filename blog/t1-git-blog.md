@@ -1,23 +1,15 @@
-<!-- This template is in markdown, not html, so
-  it will not render beautifully when you copy and
-  paste it into your github.io site, but it will at
-  least be published. Next week you'll be creating a
-  blog template using HTML and CSS and you'll be able
-  to copy and paste the blog posts from week 1 in there
-  to make them pretty next week.
+Week 1: Dipping our toes in the water
 
-  For now, please replace the title, subtitle (if desired),
-  and date with the text you would like. Markdown is pretty
-  simple, so you can just feel free to type. =) -->
+Command Line basics, Git version control, and GitHub social coding
 
-# Title
-#### Subtitle
-#### Date
+September 18, 2014
 
-Paragraph 1
+The first week of Phase 0 has been busy and absorbing, to say the least. Lots to learn in the last few days, but now I've become well versed in some of the fundamental tools developers use. I made sure to spend time reinforcing all the Terminal and Git commands, and now have no problem recalling most of them to navigate files, make adds and commits to my local repository, and push changes to a remote repository. Basic stuff, but it's pretty enthralling to feel confident in all this when just a few days ago I would have stared at you slack-jawed if you'd told me to "push a commit to the  remote Git repository."
 
-Paragraph 2
+First up was a short but productive crash course in the commands used to navigate our files. No more graphical user interface (GUI) mouse or trackpad clicks for us! Next we learned about version control, which is is how developers keep track of changes to their code, work on updates to the master code, and eventually merge those changes into a project. Version control lets you save a new, separate file each time you make an update rather than having one file that is continually improved and saved. Doing this lets you refer back to code you used in the past. For example if you introduce a bug, you can refer back to a previous working version of the code and work forward from there to get it running again. Multiple team members can make changes to the same file by "merging" changes to the main file.
 
-Paragraph 3
+Git is perhaps the most popular software for version control. It allows developers to work on code on their own computers, then pass the changes on to a network housed on GitHub that others can then work with. A master file of a project is called a repository. When developers start working on a project, they "fork" the project's repository to their own GitHub page, then copy - or "clone" - the repository from GitHub to their own computer to work on it there. Once they've made changes, they use git commands in their Command Line to "add" the changes to their index, "commit" or save the changes to their local repository, then "push" the changes back to the remote repository.
 
-Add as many paragraphs as you want!!!
+"Branches" are copies of the master file that developers can make to work on their own changes. Creating a branch means creating a separate copy of the master file that can be edited or changed without affecting the original master. When a developer is satisfied with their changes on the branch they were working on, they can merge it back to the master branch. The master is where to most refined and well-tested final code lives.
+
+Using Git to store code is beneficial because it is open source and it lets others see your work and comment, collaborate, or learn. Conversely, you can look at other people's projects and learn from them. Aside from being a great collaboration tool, GitHub offers you all the benefits of version control that let you keep close track of the work you are doing on your code without losing anything.

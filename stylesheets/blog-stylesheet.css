@@ -7,6 +7,12 @@ div {
 	border: 1px solid black;
 }
 
+span.header {
+	line-height:75px;
+	vertical-align: middle;
+}
+
+
 #wrapper {
 	max-width: 900px;
 	margin: 0 auto;
@@ -15,23 +21,29 @@ div {
 #header {
 	height:75px;
 	width:100%;
+	padding: 0 20px;
+	font-family: Rockwell Extra Bold;
+	font-size: 1.5em;
 }
 
 #nav-bar {
 	margin: 0 auto;
 	height: 25px;
-	width: 80%;
+	width: 90%;
 }
 
 #nav-bar ul {
 	list-style-type: square;
 	width: 80%;
+	text-align: center;
+	margin: 0 auto;
 }
 
 #nav-bar ul li {
 	display: inline;
 	padding: 0 auto;
-	margin: 0 10px;
+	margin: 0 2%;
+	font-family: Rockwell
 }
 
 #content {
@@ -48,4 +60,10 @@ div {
 #sidebar {
 	width: 23%;
 	float: right;
+	list-style: none;
 }
+
+#sidebar ul {
+	list-style-type: none;
+}
+

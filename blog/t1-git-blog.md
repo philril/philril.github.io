@@ -1,4 +1,4 @@
-Week 1: Dipping our toes in the water
+Week 1: Laying the groundwork
 
 Command Line basics, Git version control, and GitHub social coding
 

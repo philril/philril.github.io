@@ -10,17 +10,18 @@ div {
 span.header {
 	line-height:75px;
 	vertical-align: middle;
+	padding-left: 20px
 }
 
 #wrapper {
-	max-width: 900px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
 #header {
 	height:75px;
 	width:100%;
-	padding: 0 20px;
+	padding: 0 0px;
 	font-family: Rockwell Extra Bold;
 	font-size: 1.5em;
 }
@@ -33,21 +34,25 @@ span.header {
 
 #nav-bar ul {
 	list-style-type: square;
-	width: 80%;
+	width: 90%;
 	text-align: center;
 	margin: 0 auto;
+	display: table;
 }
 
 #nav-bar ul li {
-	display: inline;
-	padding: 0 auto;
-	margin: 0 2%;
-	font-family: Rockwell
+	font-family: Rockwell;
+	display: table-cell;
+	border: 1px solid black;
+	width: 15%;
+	vertical-align: middle;
+	line-height: 25px
 }
 
 #content {
-	width: 73%;
+	width: 75%;
 	float: left;
+	padding: 20px;
 	
 }
 
@@ -57,7 +62,7 @@ span.header {
 }
 
 #sidebar {
-	width: 23%;
+	width: 20%;
 	float: right;
 	list-style: none;
 }

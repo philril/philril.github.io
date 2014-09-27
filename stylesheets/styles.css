@@ -75,7 +75,7 @@ div {
 	position: relative;
 	display:block;
 	margin: 0 auto;
-	background-image: url("file://localhost/Users/philril/Documents/DBC/phase-0/philril.github.io/images/sunset-oakland.png");
+	background-image: url("http://philril.github.io//Images/sunset-oakland.png");
 	background-size: 100%;
 	background-position:center;
 }
@@ -86,7 +86,7 @@ div {
 	position:relative;
 	display: block;
 	margin:0 auto;
-	background-image: url("file://localhost/Users/philril/Documents/DBC/phase-0/philril.github.io/images/sunset-oakland.png");
+	background-image: url("http://philril.github.io//Images/sunset-oakland.png");
 	
 	background-position:center;
 }
@@ -163,7 +163,7 @@ div {
 	float: left;
 	left: 5%;
 	border-radius: 100%;
-	background-image:url("file://localhost/Users/philril/Documents/DBC/phase-0/philril.github.io/Images/headshot2.png");
+	background-image:url("http://philril.github.io//Images/headshot2.png");
 	background-size: 100%;
 	border:1px solid white;
 	background-position: center bottom;

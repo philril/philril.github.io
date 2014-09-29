@@ -5,7 +5,7 @@
 	<title>Situational Awareness: CSS Positioning 101</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<link href="./index_files/css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
 </head>
 
 
@@ -56,58 +56,70 @@
 	<p><!-- Insert date here -->September 28, 2014</p>
 	<br>
 	<p><!-- Insert text here -->
-
-CSS positioning is a commonly used and seemingly benign subject that has ended up confounding many beginning web designers. Positioning various boxes – called “divs” - that contain information within your site’s browser window is one of the fundamental functions of your CSS file. While your HTML file determines what the website says, CSS determines how all the information is positioned and where it appears. The positioning aspect is crucial, and having a thorough command of positioning can make the difference between a stale, overly simple site and a dynamic, exciting one.
-
-There are a few CSS positioning properties that determine where a box - or div - will appear on your page in relation to other boxes:
+CSS positioning is a commonly used and seemingly benign subject that has ended up confounding many beginning web designers. Positioning various boxes (called divs) that contain information within your site’s browser window is one of the fundamental functions of your CSS file. While your HTML file determines what the website says, CSS determines how all the information is positioned and where it appears. The positioning aspect is crucial, and having a thorough command of positioning can make the difference between a stale, overly simple site and a dynamic, exciting one.
+</p>
+<p>
+There are a few CSS positioning properties that determine where a div will appear on your page in relation to other boxes:
+</p>
 <br>
+<p>
 <u>Static</u>
 <br>
 <img src="./Images/static.png">
-The first is “position: static,” which is the default property that all divs have. Static follows the normal flow of the document, meaning if you have three divs they will all appear stacked on top of one another. Since static is the default positioning, the “Position: static” property is normally not used unless it is to override a previous positioning property.
+The first is Position: static, which is the default property that all divs have. Static follows the normal flow of the document, meaning if you have three divs they will all appear stacked on top of one another. Since static is the default positioning, the Position: static property is normally not used unless it is to override a previous positioning property.
+</p>
 <br>
+<p>
 <u>Relative</u>
 <br>
 <img src="./Images/relative.png">
-The next property is “position: relative.” This property lets you use additional “top, bottom, left, or right” properties in your CSS file to move the div relative to where it would normally appear in the document. For example, you could move the second div in your stack of divs 20 pixels down by specifying “Top: 20px.” This would make a 20px white space from the top div, and the third div would be overlapped by the second. The third div still occupies its original, static space in the document, so it does not clear the second div relative when it moves down.
+The next property is Position: relative. This property lets you use additional top, bottom, left, or right properties in your CSS file to move the div relative to where it would normally appear in the document. For example, you could move the second div in your stack of divs 20 pixels down by specifying Top: 20px. This would make a 20px white space from the top div, and the third div would be overlapped by the second. The third div still occupies its original, static space in the document, so it does not clear the second div relative when it moves down.
+</p>
 <br>
+<p>
 <u>Absolute</u>
 <br>
 <img src="./Images/absolute.png">
-Our third property is perhaps the most powerful in that it removes the element from the document’s flow and puts it exactly where you specify. “Position: absolute” also uses the “top, bottom, left, or right” properties to move the element, but this time it moves the div relative to the whole browser window rather than relative to where it appears in the normal flow of the document. For example, the second div could be moved to the very top right of the screen by using “Top: 0” and “Right: 0” properties. The third div would then move up right below the first. “Position: absolute” is also often used to position divs within a parent div. If the parent div has “relative” positioning, “absolute” positioning can be used for the child div to place it at a specific place in the parent div. In other words, the absolute positioning now relates to where it is in the parent div, rather than the browser window.
+Our third property is perhaps the most powerful in that it removes the element from the document’s flow and puts it exactly where you specify. Position: absolute also uses the top, bottom, left, or right properties to move the element, but this time it moves the div relative to the whole browser window rather than relative to where it appears in the normal flow of the document. For example, the second div could be moved to the very top right of the screen by using Top: 0 and Right: 0 properties. The third div would then move up right below the first. Position: absolute is also often used to position divs within a parent div. If the parent div has relative positioning, absolute positioning can be used for the child div to place it at a specific place in the parent div. In other words, the absolute positioning now relates to where it is in the parent div, rather than the browser window.
+</p>
 <br>
+<p>
 <u>Fixed</u>
 <br>
-“Position: fixed” keeps a div positioned in a specific place in the browser window, regardless of the rest of the document. When you scroll in the browser window, a fixed div will keep its position and stay in place. Like absolute positioning, fixed positioning is achieved by specifying the distance from the top, bottom, left, and right, but it is always in relation to the browser window rather than any parent div.
+Position: fixed keeps a div positioned in a specific place in the browser window, regardless of the rest of the document. When you scroll in the browser window, a fixed div will keep its position and stay in place. Like absolute positioning, fixed positioning is achieved by specifying the distance from the top, bottom, left, and right, but it is always in relation to the browser window rather than any parent div.
+</p>
 <br>
+<p>
 <u>Floats</u>
 <br>
 <img src="./Images/float1.png">
-Finally, floats push an element as far as possible to the left or right. Float is normally used in conjunction with relative or absolute positioning. For example, putting the “Float: right” property on the second div would push it to the right edge of the browser window. “Right: 20px” would push it 20px out from the edge, but it would still stay floated to the right regardless of whether the browser window is resized.
+Finally, floats push an element as far as possible to the left or right. Float is normally used in conjunction with relative or absolute positioning. For example, putting the Float: right property on the second div would push it to the right edge of the browser window. “Right: 20px” would push it 20px out from the edge, but it would still stay floated to the right regardless of whether the browser window is resized.
 <br>
 <img src="./Images/float2.png">
 <br>
-In order for the third div to stay under the div, we would have to dive it the “Clear: right” property to stay clear the second div. Otherwise the second div would overlap it. Text also wraps around divs that are floated to either side of the page, and therefore floats are often used for images within text.
-<br>
+In order for the third div to stay under the div, we would have to dive it the Clear: right property to stay clear the second div. Otherwise the second div would overlap it. Text also wraps around divs that are floated to either side of the page, and therefore floats are often used for images within text.
+</p>
+<p>
 Using these CSS tags gives you an infinite amount of possibilities for where and how to position your content, from text boxes to buttons to navigation bars. Divs are one of the central features of CSS, and positioning divs is a central and powerful step in the development of any page. Practice div positioning as much as possible to make sure you can use them to their full potential in your site!	
+</p>
 </div>
 
 <div id="sidebar">
 	<div id="previousposts">
 		<h2><u><!-- Insert Title here -->Previous Posts</u></h2>
 		<ul>
-			<li><a href="#"><!-- Insert post here -->1</a></li>
-			<li><a href="#"><!-- Insert post here -->2</a></li>
-			<li><a href="#"><!-- Insert post here -->3</a></li>
+			i><a href="http://philril.github.io/blog/t2-css-design.html"><!-- Insert post here -->Situational Awareness</a></li>
+			<li><a href="http://philril.github.io/blog/t1-git-blog.html"><!-- Insert post here -->Laying the Groundwork</a></li>
+			<li><a href="http://philril.github.io/blog/c1-chefs-kitchen.html"><!-- Insert post here -->Be a Creator, Not a Consumer</a></li>
 		</ul>
 	</div>
 
 	<div id="categories">
 		<h2><u><!-- Insert Title here -->Categories</u></h2>
 		<ul>
-			<li><a href="#"><!-- Insert category here -->1</a></li>
-			<li><a href="#"><!-- Insert category here -->2</a></li>
-			<li><a href="#"><!-- Insert category here -->3</a></li>
+			<li><a href="#"><!-- Insert category here -->Week 1</a></li>
+			<li><a href="#"><!-- Insert category here -->Week 2</a></li>
+			<li><a href="#"><!-- Insert category here --></a></li>
 		</ul>
 	</div>
 </div>	

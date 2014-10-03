@@ -1,9 +1,9 @@
 <html>
 
 <head>
-	<title><!--Insert page title here--></title>
+	<title><!--Insert page title here-->Storage Wars</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<link href="./index_files/css" rel="stylesheet" type="text/css">
+	<link href="../index_files/css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
 </head>
 
@@ -54,53 +54,67 @@
 	<p><!-- Insert date here -->October 2, 2014</p>
 	<br>
 	<p><!-- Insert text here -->Arrays and hashes are two different ways of storing lists of data. Although both store collections of information, they each serve slightly different purposes. Both can be easily accessed to call up a specific element and are used, for example, to store user information, contact lists, pricing information, and so on. They differ, however, in their syntax and their uses. Arrays are more useful for straightforward lists and data, for example sorting a list of prices. Hashes are more flexible to link information together, like to store a name and an address together.</p>
-	<p>
-	<u>Arrays</u>
-</p>
+	<p><h3><u>Arrays</u></h3></p>
 <p>
 Arrays are the first type of indexed lists. They are defined with a unique name and contain a list after the equals sign.
 </p>
 <p>
 Here are a few types of hashes:
 </p>
+<br>
 <p>
 <b>Array_1 = [1, 2, 3, 4, 5]</b>
 </p>
+<br>
 <p>
 <b>Array_2 = [“Hi”, “Hola”, “Bonjur”, “Konnichiwa”]</b>
 </p>
-As you can see, arrays can store numbers or strings. The information in arrays can be accessed by calling the position of the element you want. But it’s important to note that the list of positions starts at 0 rather than 1. So if you want to call up the number “1” in the first array you would write “puts Array_1[0]”, which would print out “1,” since that is in the “zeroth” position.
+<br>
 <p>
-Arrays also have many special methods that are used to modify the array or access information. For example, to add an element to an array you type Array_1.push(“new element”). To determine the number of elements in an array, you’d write “Array_1.length”, which would give you “5” because there are 5 elements. To read about the many more types of array methods, check out Ruby Docs: http://www.ruby-doc.org/core-2.0/Array.html
+As you can see, arrays can store numbers or strings. The information in arrays can be accessed by calling the position of the element you want. But it’s important to note that the list of positions starts at 0 rather than 1. So if you want to call up the number “1” in the first array you would write “puts Array_1[0]”, which would print out “1,” since that is in the “zeroth” position.
+</p>
+<p>
+Arrays also have many special methods that are used to modify the array or access information. For example, to add an element to an array you type Array_1.push(“new element”). To determine the number of elements in an array, you’d write “Array_1.length”, which would give you “5” because there are 5 elements. To read about the many more types of array methods, check out <a href="http://www.ruby-doc.org/core-2.0/Array.html">Ruby Docs<a>.
 </p>
 <p>
 One very common type of method used on arrays is iterators, which go over each array element specified and modify it. Here is an example:
 </p>
+<br>
 <p>
 <b>Array_2.each { |x| puts x + “, Philip” }</b>
 </p>
+<br>
 <p>
 This would output the following:
 </p>
 <p>
 <b>
-“Hi, Philip”
+<br>
+“Hi, Philip"
+<br>
 “Hola, Philip”
+<br>
 “Bonjur, Philip”
+<br>
 “Konnichiwa, Philip”
 </b>
 </p>
+<br>
 <p>
 As you can see, the “.each” method ensures the code that follows is applied to each element in the array. In the block of code that follows, each element is defined using “|x|, ” which is a placeholder name for each element in the array. So, for each “|x” (element), Ruby will write out (puts) the element plus the “, Philip” string. The result is a personalized greeting in a few different languages. There are many more ruby iterators, such as “.times”,  “.map”, and others, which are all explained in the Ruby Docs: http://www.ruby-doc.org/core-2.0/Array.html
 </p>
+<br>
 <p>
-<u>Hashes</u>
-</p>
+<u><h3>Hashes</h3></u>
+<br>
+<p>
 Hashes are also indexed lists, just like arrays, but they differ in one main way. Instead of having a value that corresponds to an element in the list, hashes use a specific “key” to access the data. You can think of hashes as a dictionary that contains a word (the “key”) and the definition attached to it (the “value”). This specificity makes them more flexible in the way they are used.
+</p>
 <p>
 Here is a sample hash:
 </p>
 <p>
+<br>
 <b>
 Hash_1 = {
 	:name => “Philip”
@@ -109,41 +123,47 @@ Hash_1 = {
 }
 </b>
 </p>
+<br>
 <p>
 In the first element, the “name:” is the key, while “Philip” is the element that the key refers to. An element can be called by calling on the key, like so:
 </p>
 <p>
+<br>
 <b>
 Hash_1[name]
 </b>
 </p>
+<br>
 <p>
-Which would output “Philip.” You can also call hashes within a string, like this example:
+Which would output “Philip.” You can also call hashes within a string, like in this example:
 </p>
 <p>
+<br>
 <b>
 “My name is #{Hash_1[name]}”
 </b>
 </p>
+<br>
 <p>
 This of course would print out “Hello, my name is Philip”.
-<p>
 </p>
-Hashes also have many of the same methods as arrays, such as “.length”, “.delete”, and “.select”. Again like arrays, hashes have iterators that pass a block of code to select certain keys, values, or key/value pairs.
 <p>
+Hashes also have many of the same methods as arrays, such as “.length”, “.delete”, and “.select”. Again like arrays, hashes have iterators that pass a block of code to select certain keys, values, or key/value pairs.
 </p>
 <p>
 For example:
 </p>
+<br>
 <p>
 <b>
 Hash_1.each {|k,v| v.include?(“O”) puts v}
 </b>
-<p>
 </p>
+<br>
 <p>
 This would return “Oakland”, the only value that includes the letter “O” in it.
 </p>
+<br>
 <p>
 To sum up, arrays are more often used to store lists of pure data that can be easily sorted and ordered. Hashes, on the other hand, are more flexible for data linked to other data. In a hash you can look up a word and find the definition. Both are essential building blocks in Ruby, so it is crucial to understand how they work.
 </p>

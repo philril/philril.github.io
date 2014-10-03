@@ -53,13 +53,13 @@
 	<br>
 	<p><!-- Insert date here -->October 2, 2014</p>
 	<br>
-	<p><!-- Insert text here -->Arrays and hashes represent two different ways of storing lists of data. Although both collect and store information, they each serve slightly different purposes. Both can be easily accessed to call up a specific element and are used to store user information, contact lists, pricing information, and so on. But they differ in their syntax and their uses. Arrays are more useful for straightforward lists and data, for example sorting a list of prices. Hashes are more flexible to link information together, like to store a name and an address together.</p>
+	<p><!-- Insert text here -->In Ruby, arrays and hashes represent two different ways of storing lists of data. Both can be easily accessed to call up a specific element and are used to store user information, contact lists, pricing information, and so on. Although both collect and store information, they differ in their syntax and their uses. Arrays are more useful for straightforward lists and data, for example sorting a list of prices. Hashes are more flexible and are used to link information together, like to store a name and an address together.</p>
 <h2><u>Arrays</u></h2>
 <p>
-Arrays are the first type of indexed lists. They are defined with a unique name and contain a list after the equals sign.
+Arrays are the first type of indexed lists. They are defined with a unique array name set "equal to" a list of data.
 </p>
 <p>
-Here are a few types of arrays:
+Here are a two examples of arrays:
 </p>
 <br>
 <p>
@@ -71,7 +71,7 @@ Here are a few types of arrays:
 </p>
 <br>
 <p>
-As you can see, arrays can store numbers or strings. The information in arrays can be accessed by calling the position of the element you want. But it’s important to note that the list of positions starts at 0 rather than 1. So if you want to call up the number “1” in the first array you would write “puts Array_1[0]”, which would print out “1,” since that is in the “zeroth” position.
+As you can see, arrays can store numbers and strings, but they can also store other arrays, hashes, or other elements. The information in arrays can be accessed by calling the position of the element you want. But it’s important to note that the list of index positions starts at 0 rather than 1. So if you want to call up the number “1” in the first array you would write “puts Array_1[0]”, which would print out “1,” since that is in the “zeroth” position.
 </p>
 <p>
 Arrays also have many special methods that are used to modify the array or access information. For example, to add an element to an array you type Array_1.push(“new element”). To determine the number of elements in an array, you’d write “Array_1.length”, which would give you “5” because there are 5 elements. To read about the many other types of array methods, check out <a href="http://www.ruby-doc.org/core-2.0/Array.html">Ruby Docs<a>.
@@ -167,7 +167,7 @@ This would return “Oakland”, the only value that includes the letter “O”
 </p>
 <br>
 <p>
-To sum up, arrays are more often used to store lists of pure data that can be easily sorted and ordered. Hashes, on the other hand, are more flexible for data linked to other data. In a hash you can look up a word and find the definition. Both are essential building blocks in Ruby, so it is crucial to understand how they work.
+To sum up, arrays are more often used to store lists of pure data that can be easily sorted and ordered. Hashes, on the other hand, are more flexible for data linked to other data. In a hash you can look up a word and find the definition. Both arrays and hashes are essential building blocks in Ruby, and understanding how each are used is crucial to becoming a master coder!
 </p>
 
 </div>

@@ -54,12 +54,12 @@
 	<p><!-- Insert date here -->October 2, 2014</p>
 	<br>
 	<p><!-- Insert text here -->Arrays and hashes are two different ways of storing lists of data. Although both store collections of information, they each serve slightly different purposes. Both can be easily accessed to call up a specific element and are used, for example, to store user information, contact lists, pricing information, and so on. They differ, however, in their syntax and their uses. Arrays are more useful for straightforward lists and data, for example sorting a list of prices. Hashes are more flexible to link information together, like to store a name and an address together.</p>
-	<p><h3><u>Arrays</u></h3></p>
+<h2><u>Arrays</u></h2>
 <p>
 Arrays are the first type of indexed lists. They are defined with a unique name and contain a list after the equals sign.
 </p>
 <p>
-Here are a few types of hashes:
+Here are a few types of arrays:
 </p>
 <br>
 <p>
@@ -74,7 +74,7 @@ Here are a few types of hashes:
 As you can see, arrays can store numbers or strings. The information in arrays can be accessed by calling the position of the element you want. But it’s important to note that the list of positions starts at 0 rather than 1. So if you want to call up the number “1” in the first array you would write “puts Array_1[0]”, which would print out “1,” since that is in the “zeroth” position.
 </p>
 <p>
-Arrays also have many special methods that are used to modify the array or access information. For example, to add an element to an array you type Array_1.push(“new element”). To determine the number of elements in an array, you’d write “Array_1.length”, which would give you “5” because there are 5 elements. To read about the many more types of array methods, check out <a href="http://www.ruby-doc.org/core-2.0/Array.html">Ruby Docs<a>.
+Arrays also have many special methods that are used to modify the array or access information. For example, to add an element to an array you type Array_1.push(“new element”). To determine the number of elements in an array, you’d write “Array_1.length”, which would give you “5” because there are 5 elements. To read about the many other types of array methods, check out <a href="http://www.ruby-doc.org/core-2.0/Array.html">Ruby Docs<a>.
 </p>
 <p>
 One very common type of method used on arrays is iterators, which go over each array element specified and modify it. Here is an example:
@@ -101,11 +101,10 @@ This would output the following:
 </p>
 <br>
 <p>
-As you can see, the “.each” method ensures the code that follows is applied to each element in the array. In the block of code that follows, each element is defined using “|x|, ” which is a placeholder name for each element in the array. So, for each “|x” (element), Ruby will write out (puts) the element plus the “, Philip” string. The result is a personalized greeting in a few different languages. There are many more ruby iterators, such as “.times”,  “.map”, and others, which are all explained in the Ruby Docs: http://www.ruby-doc.org/core-2.0/Array.html
+As you can see, the “.each” method ensures the code block that follows is applied to each element in the array. In the code block, each element is defined using “|x|, ” which is a placeholder name for each element in the array. So, for each “|x|” (element), Ruby will write out (puts) the element plus the “, Philip” string. The result is a personalized greeting in a few different languages. There are many more ruby iterators, such as “.times”,  “.map”, and others, which are all explained in <a href="http://www.ruby-doc.org/core-2.0/Array.html">Ruby Docs</a>.
 </p>
 <br>
-<p>
-<u><h3>Hashes</h3></u>
+<h2>Hashes</h2>
 <br>
 <p>
 Hashes are also indexed lists, just like arrays, but they differ in one main way. Instead of having a value that corresponds to an element in the list, hashes use a specific “key” to access the data. You can think of hashes as a dictionary that contains a word (the “key”) and the definition attached to it (the “value”). This specificity makes them more flexible in the way they are used.
@@ -117,8 +116,11 @@ Here is a sample hash:
 <br>
 <b>
 Hash_1 = {
+<br>
 	:name => “Philip”
+<br>
 	:hometown => “Oakland”
+	<br>
 	:favorite_color => “Green”
 }
 </b>
@@ -148,7 +150,7 @@ Which would output “Philip.” You can also call hashes within a string, like 
 This of course would print out “Hello, my name is Philip”.
 </p>
 <p>
-Hashes also have many of the same methods as arrays, such as “.length”, “.delete”, and “.select”. Again like arrays, hashes have iterators that pass a block of code to select certain keys, values, or key/value pairs.
+Hashes also have many of the same methods as arrays, such as “.length”, “.delete”, and “.select”. Also like arrays, hashes have iterators that pass a block of code to select certain keys, values, or key/value pairs.
 </p>
 <p>
 For example:
@@ -193,10 +195,10 @@ To sum up, arrays are more often used to store lists of pure data that can be ea
 
 <div id="social-media">
 	<ul>
-		<li><a href="https://twitter.com/phil_ril"><img src="./Images/twitter.png"></a></li><!-- Twitter -->
-		<li><a href="https://www.linkedin.com/pub/philip-riley/16/382/a47"><img src="./Images/linkedin.png"></a></li><!-- LinkedIn -->
-		<li><a href="https://www.facebook.com/hiriley"><img src="./Images/facebook.png"></a></li><!-- Facebook -->
-		<li><a href="https://plus.google.com/u/0/105410315172366153717/posts"><img src="./Images/googleplus.png"></a></li><!--+Google= -->
+		<li><a href="https://twitter.com/phil_ril"><img src="../Images/twitter.png"></a></li><!-- Twitter -->
+		<li><a href="https://www.linkedin.com/pub/philip-riley/16/382/a47"><img src="../Images/linkedin.png"></a></li><!-- LinkedIn -->
+		<li><a href="https://www.facebook.com/hiriley"><img src="../Images/facebook.png"></a></li><!-- Facebook -->
+		<li><a href="https://plus.google.com/u/0/105410315172366153717/posts"><img src="../Images/googleplus.png"></a></li><!--+Google= -->
 	</ul>
 </div>
 

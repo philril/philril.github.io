@@ -64,39 +64,65 @@ There are a few CSS positioning properties that determine where a div will appea
 <br>
 <p>
 <u>Static</u>
+</p>
 <br>
-<img src="../Images/static.png">
+<p>
+<img src="../Images/static.png" height="338px" width="700px">
+</p>
+<br>
+<p>
 The first is Position: static, which is the default property that all divs have. Static follows the normal flow of the document, meaning if you have three divs they will all appear stacked on top of one another. Since static is the default positioning, the Position: static property is normally not used unless it is to override a previous positioning property.
 </p>
 <br>
 <p>
 <u>Relative</u>
+</p>
 <br>
-<img src="../Images/relative.png">
+<p>
+<img src="../Images/relative.png" height="338px" width="700px">
+</p>
+<br>
+<p>
 The next property is Position: relative. This property lets you use additional top, bottom, left, or right properties in your CSS file to move the div relative to where it would normally appear in the document. For example, you could move the second div in your stack of divs 20 pixels down by specifying Top: 20px. This would make a 20px white space from the top div, and the third div would be overlapped by the second. The third div still occupies its original, static space in the document, so it does not clear the second div relative when it moves down.
 </p>
 <br>
 <p>
 <u>Absolute</u>
+<p>
 <br>
-<img src="../Images/absolute.png">
+<p>
+<img src="../Images/absolute.png" height="338px" width="700px">
+</p>
+<br>
+<p>
 Our third property is perhaps the most powerful in that it removes the element from the document’s flow and puts it exactly where you specify. Position: absolute also uses the top, bottom, left, or right properties to move the element, but this time it moves the div relative to the whole browser window rather than relative to where it appears in the normal flow of the document. For example, the second div could be moved to the very top right of the screen by using Top: 0 and Right: 0 properties. The third div would then move up right below the first. Position: absolute is also often used to position divs within a parent div. If the parent div has relative positioning, absolute positioning can be used for the child div to place it at a specific place in the parent div. In other words, the absolute positioning now relates to where it is in the parent div, rather than the browser window.
 </p>
 <br>
 <p>
 <u>Fixed</u>
 <br>
+</p>
+<p>
 Position: fixed keeps a div positioned in a specific place in the browser window, regardless of the rest of the document. When you scroll in the browser window, a fixed div will keep its position and stay in place. Like absolute positioning, fixed positioning is achieved by specifying the distance from the top, bottom, left, and right, but it is always in relation to the browser window rather than any parent div.
 </p>
 <br>
 <p>
 <u>Floats</u>
+</p>
 <br>
-<img src="../Images/float1.png">
+<p>
+<img src="../Images/float1.png" height="338px" width="700px">
+</p>
+<br>
+<p>
 Finally, floats push an element as far as possible to the left or right. Float is normally used in conjunction with relative or absolute positioning. For example, putting the Float: right property on the second div would push it to the right edge of the browser window. “Right: 20px” would push it 20px out from the edge, but it would still stay floated to the right regardless of whether the browser window is resized.
+</p>
 <br>
-<img src="../Images/float2.png">
+<p>
+<img src="../Images/float2.png" height="338px" width="700px">
+</p>
 <br>
+<p>
 In order for the third div to stay under the div, we would have to dive it the Clear: right property to stay clear the second div. Otherwise the second div would overlap it. Text also wraps around divs that are floated to either side of the page, and therefore floats are often used for images within text.
 </p>
 <p>
@@ -129,10 +155,10 @@ Using these CSS tags gives you an infinite amount of possibilities for where and
 
 <div id="social-media">
 	<ul>
-		<li><a href="https://twitter.com/phil_ril"><img src="./Images/twitter.png"></a></li><!-- Twitter -->
-		<li><a href="https://www.linkedin.com/pub/philip-riley/16/382/a47"><img src="./Images/linkedin.png"></a></li><!-- LinkedIn -->
-		<li><a href="https://www.facebook.com/hiriley"><img src="./Images/facebook.png"></a></li><!-- Facebook -->
-		<li><a href="https://plus.google.com/u/0/105410315172366153717/posts"><img src="./Images/googleplus.png"></a></li><!--+Google= -->
+		<li><a href="https://twitter.com/phil_ril"><img src="../Images/twitter.png"></a></li><!-- Twitter -->
+		<li><a href="https://www.linkedin.com/pub/philip-riley/16/382/a47"><img src="../Images/linkedin.png"></a></li><!-- LinkedIn -->
+		<li><a href="https://www.facebook.com/hiriley"><img src="../Images/facebook.png"></a></li><!-- Facebook -->
+		<li><a href="https://plus.google.com/u/0/105410315172366153717/posts"><img src="../Images/googleplus.png"></a></li><!--+Google= -->
 	</ul>
 </div>
 

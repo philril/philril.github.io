@@ -8,6 +8,7 @@ body {
 html {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color: white;
+	text-shadow: 1px 1px black;
 }
 
 div {
@@ -15,14 +16,12 @@ div {
 }
 
 #name {
-	width: 50%;
-	/* vertical-align: middle; */
+	width: 80%;
 	text-align: center;
 	margin: 0 auto;
 	display: table;
 	font-size: 2em;
 	text-shadow: 2px 2px black;
-	/* font-family: rockwell; */
 }
 
 #title {
@@ -87,12 +86,10 @@ div {
 	display: block;
 	margin:0 auto;
 	background-image: url("http://philril.github.io//Images/sunset-oakland.png");
-	
 	background-position:center;
 }
 
 #content {
-	border: 1px solid white;
 	width:750px;
 	height:600px;
 	display: block;
@@ -105,7 +102,12 @@ div {
 
 #content p {
 	text-align:left;
-	font-size:1.25em;
+	font-size:1.3em;
+}
+
+#img {
+	position:relative;
+	margin:0 auto;
 }
 
 #contact {
@@ -130,7 +132,6 @@ div {
 }
 
 #sidebar {
-	border: 1px solid white;
 	width: 170px;
 	height:600px;
 	position:absolute;

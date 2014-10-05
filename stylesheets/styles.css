@@ -74,9 +74,10 @@ div {
 	position: relative;
 	display:block;
 	margin: 0 auto;
-	background-image: url("http://philril.github.io//Images/sunset-oakland.png");
-	background-size: 100%;
-	background-position:center;
+	background-image: url("http://philril.github.io//Images/oakland.png");
+	background-size: 150%;
+	background-position: center;
+
 }
 
 #main-area-blog{
@@ -85,8 +86,10 @@ div {
 	position:relative;
 	display: block;
 	margin:0 auto;
-	background-image: url("http://philril.github.io//Images/sunset-oakland.png");
-	background-position:center;
+	background-image: url("http://philril.github.io//Images/oakland.png");
+	background-position:center left;
+	background-size:177%;
+	background-repeat:no-repeat;
 }
 
 #content {
@@ -103,11 +106,6 @@ div {
 #content p {
 	text-align:left;
 	font-size:1.3em;
-}
-
-#img {
-	position:relative;
-	margin:0 auto;
 }
 
 #contact {

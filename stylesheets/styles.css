@@ -101,6 +101,7 @@ div {
 	left:50px;
 	top:65px;
 	overflow:scroll;
+	background:gray;
 }
 
 #content p {
@@ -110,7 +111,6 @@ div {
 
 #content img {
 	text-align:center;
-
 }
 
 #contact {

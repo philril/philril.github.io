@@ -1,0 +1,149 @@
+<html>
+
+
+<head>
+	<title><!--Insert page title here--></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link href="../index_files/css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+</head>
+
+
+<body>
+
+<div id="wrapper">
+
+<div id="header">
+	<div id="name">
+		<h1>PHILIP RILEY</h1>
+	</div>
+</div>
+
+<div id="nav-bar">
+	<ul>
+		<li><a href="http://philril.github.io/index.html" style="
+    color: white;
+">Home</a></li>
+		<li><a href="http://philril.github.io/about-me.html" style="
+    color: white;
+">About Me</a></li>
+		<li><a href="http://philril.github.io/projects.html" style="
+    color: white;
+">Portfolio</a></li>
+		<li><a href="http://philril.github.io/blog-index.html" style="
+    color: white;
+">Blog</a></li>
+		<li><a href="http://philril.github.io/contact.html" style="
+    color: white;
+">Contact</a></li>
+	</ul>
+</div>
+
+
+<div id="main-area-blog">
+
+<div id="title">
+	<h1>Blog</h1>
+</div>
+
+<div id="content">
+	<h1><!-- Insert title here -->Array cartography</h1>
+	<br>
+	<h2>Week <!-- Insert week # here -->4</h2>
+	<br>
+	<h2><!-- Insert subtitle here -->Ruby's "map" method</h2>
+	<br>
+	<p><!-- Insert date here -->October 10, 2014</p>
+	<br>
+
+<p>Ruby’s Enumerable#map method is a powerful tool that you can apply to an enumerable, for example an array, that creates a new array with certain conditions for each element. It a very often-used method, and its flexibility makes it one of the best methods for modifying arrays.</p>
+
+<p>Take the following example, for instance:</p>
+<br>
+<p>def map(array)</p>
+    <p/>array.map{|num| puts num*2}</p>
+<p>end</p>
+<br>
+<p>map([1,2,3,4,5])<p>
+<br>
+<p>Which would return this array:</p>
+<br>
+<p>[2,4,6,8,10]</p>
+<br>
+<p>As you can see, the “.map” method is applied to the original array [1,2,3,4,5]. The block that follows, within “{ }” is the part that actually modifies the array. Notably, map returns an entirely new array, [2,4,6,8,10], rather than modifying the original array. You could still access the original array just by typing “return array.”</p>
+
+<p>To modify the original array, you would use “.map!” (with exclamation point) which is a destructive method that overwrites the original array with the resulting new array.  For example, if you called “map!” on the above array, you would still get [2,4,6,8,10]. But if you called “return array” any time after calling “map!” you would get a padded array with “nil” as all the values. The original array doesn’t exist anymore because the modified array has taken its place.</p>
+
+<p>Map is very helpful becasue you don’t have to define and specify a new array to put your modifications in. For example, if you were using the “.each” method, you would have to define a new array and append each element into the array, like so:</p>
+<br>
+
+<p>array = [1,2,3,4,5]</p>
+<p>new_array = []</p>
+<p>array.each{|num| new_array << num*2}</p>
+<br>
+<p>Of course, map can be used on any type of array, from strings to integers to combinations of both. Interestingly, the block of code doesn’t need to modify the elements, but can replace them entirely. For example:</p>
+<br>
+<p>[1,2,3].map[“number replaced!]</p>
+<br>
+<p>would return:</p>
+<br>
+<p>[“number replaced!”, “number replaced!”, “number replaced!”]</p>
+
+<p>Map is also sometimes called “collect” and calling the “collect” method on an object does the same thing as map.</p>
+
+<p>To use a more complicated example of “map,” can you guess what the following would return?</p>
+<br>
+<p>def map</p>
+    <p>array = %w[I am an angry array]</p>
+    <p>array.map!{|string| (string === "angry") ? "ANGRY" : string}.join(" ")</p>
+<p>end</p>
+<br>
+<p>map</p>
+<br>
+<p>If you guessed “I am an ANGRY array,” you’re right!</p>
+
+</div>
+
+<div id="sidebar">
+	<div id="previousposts">
+		<h2><u><!-- Insert Title here -->Previous Posts</u></h2>
+		<ul>
+			<li><a href="http://philril.github.io/blog/c4-tech-issues.html" style="color: white;"><!-- Insert post here -->Silicon Valley's false promise of meritocracy</a></li>
+			<li><a href="http://philril.github.io/blog/t4-enumerable-methods.html" style="color: white;"><!-- Insert post here -->Array Cartography</a></li>
+			<li><a href="http://philril.github.io/blog/c3-thinking-style.html" style="color: white;"><!-- Insert post here -->Thinking About Thinking</a></li>
+			<li><a href="http://philril.github.io/blog/t4-arrays-hashes.html" style="color: white;"><!-- Insert post here -->Storage Wars</a></li>
+			<li><a href="http://philril.github.io/pair-page/gps1.1.html"><!-- Insert post here -->Pair Programming Basics</a></li>
+			<li><a href="http://philril.github.io/blog/t2-css-design.html"><!-- Insert post here -->Situational Awareness</a></li>
+			<li><a href="http://philril.github.io/blog/t1-git-blog.html"><!-- Insert post here -->Laying the Groundwork</a></li>
+			<li><a href="http://philril.github.io/blog/c1-chefs-kitchen.html"><!-- Insert post here -->Be a Creator, Not a Consumer</a></li>
+		</ul>
+	</div>
+
+	<div id="categories">
+		<h2><u><!-- Insert Title here -->Categories</u></h2>
+		<ul>
+			<li><a href="http://philril.github.io/blog/technical-index.html"><!-- Insert category here -->Technical posts</a></li>
+			<li><a href="http://philril.github.io/blog/cultural-index.html"><!-- Insert category here -->Cultural posts</a></li>
+		</ul>
+	</div>
+
+</div>
+
+<div id="social-media">
+	<ul>
+		<li><a href="https://twitter.com/phil_ril"><img src="../Images/twitter.png"></a></li><!-- Twitter -->
+		<li><a href="https://www.linkedin.com/pub/philip-riley/16/382/a47"><img src="../Images/linkedin.png"></a></li><!-- LinkedIn -->
+		<li><a href="https://www.facebook.com/hiriley"><img src="../Images/facebook.png"></a></li><!-- Facebook -->
+		<li><a href="https://plus.google.com/u/0/105410315172366153717/posts"><img src="../Images/googleplus.png"></a></li><!--+Google= -->
+	</ul>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -65,7 +65,7 @@ Let’s consider an example. Pretend you own a bike shop, and you need to print 
 You would start by defining a class called “Bike.” Within that class you would want to create methods to take information on the bike, enter a discount amount, and finally print out a tag to put on each bike.
 </p>
 <br>
-<img src ="../Images/initialize">
+<img src ="../Images/initialize.png">
 <br>
 <p>
 First you would initialize your new item in the Bike class by requiring information on the bike brand, model, year, and MSRP price. All this information is assigned and stored within the class using an instance variable. By typing an “@” before the variable name, you allow the varialbe to be used in other methods within the same class. There are other types of variables that you can create by typing other symbols before the variable name, including global variables (“$”) and class variables (“@@”). You can read more about these other types of variables in Ruby docs.
@@ -74,13 +74,13 @@ First you would initialize your new item in the Bike class by requiring informat
 Now that we stored the basic information on the bike using the “initialize” method, we need to create methods to access and modify the information. Let’s create a “discount” method that lets you enter a percentage discount on the the original price. In that method, we’ll create code to take a percentage off the original manufacturer’s suggested retail price of the bike:
 </p>
 <br>
-<img src ="../Images/discount">
+<img src ="../Images/discount.png">
 <br>
 <p>
 Now all we need to do is great a “tag” method that prints out a tag will all the pertinent info on the bike. We’ll want to make sure to list all the info on the bike, included the modified sale price.
 </p>
 <br>
-<img src ="../Images/call">
+<img src ="../Images/call.png">
 <br>
 <p>
 Once that method is created, we simply create a new class instance called “my_bike,” enter the info for a bike - for example, a 2014 Specialized Stumpsumper - then call our “discount” and “tag” methods. Then we can post the tag on our bikes and wait for the customers to stream into the shop!

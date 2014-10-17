@@ -1,7 +1,9 @@
 <html>
 
 
-<head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<head>
+	<title>Keeping it Classy</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<link href="../index_files/css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
 </head>
@@ -45,27 +47,46 @@
 </div>
 
 <div id="content">
-	<h1><!-- Insert title here -->Laying the groundwork</h1>
+	<h1><!-- Insert title here -->Keeping it Classy</h1>
 	<br>
-	<h2>Week <!-- Insert week # here -->1</h2>
+	<h2>Week <!-- Insert week # here -->5</h2>
 	<br>
-	<h2><!-- Insert subtitle here -->Command Line basics, Git version control, and GitHub social coding</h2>
+	<h2><!-- Insert subtitle here -->Understanding Ruby Classes</h2>
 	<br>
-	<p class="date"><!-- Insert date here -->September 18, 2014</p>
+	<p><!-- Insert date here -->October 17, 2014</p>
 	<br>
-	<p><!-- Insert text here -->The first week of Phase 0 has been busy and absorbing, to say the least. Lots to learn in the last few days, but now I've become well versed in some of the fundamental tools developers use. I made sure to spend time reinforcing all the Terminal and Git commands, and now have no problem recalling most of them to navigate files, make adds and commits to my local repository, and push changes to a remote repository. Basic stuff, but it's pretty enthralling to feel confident in all this when just a few days ago I would have stared at you slack-jawed if you'd told me to "push a commit to the  remote Git repository."
-	</p>
-	<p>
-	First up was a short but productive crash course in the commands used to navigate our files. No more graphical user interface (GUI) mouse or trackpad clicks for us! Next we learned about version control, which is is how developers keep track of changes to their code, work on updates to the master code, and eventually merge those changes into a project. Version control lets you save a new, separate file each time you make an update rather than having one file that is continually improved and saved. Doing this lets you refer back to code you used in the past. For example if you introduce a bug, you can refer back to a previous working version of the code and work forward from there to get it running again. Multiple team members can make changes to the same file by "merging" changes to the main file.</p>
-	<img src="../Images/git.png" height="50%" width="50%">
-	<p><!-- Insert text here -->Git is perhaps the most popular software for version control. It allows developers to work on code on their own computers, then pass the changes on to a network housed on GitHub that others can then work with. A master file of a project is called a repository. When developers start working on a project, they "fork" the project's repository to their own GitHub page, then copy - or "clone" - the repository from GitHub to their own computer to work on it there. Once they've made changes, they use git commands in their Command Line to "add" the changes to their index, "commit" or save the changes to their local repository, then "push" the changes back to the remote repository.
+<p>
+Classes are one of the cornerstones of Ruby programs. They help store and access data about common types of items. Classes also let you create and apply your own unique methods on specific items. Because you can create many types of classes and methods within each class, they are one of the most flexible and versatile ways Ruby has to handle storing large amounts of information.
 </p>
 <p>
-	"Branches" are copies of the master file that developers can make to work on their own changes. Creating a branch means creating a separate copy of the master file that can be edited or changed without affecting the original master. When a developer is satisfied with their changes on the branch they were working on, they can merge it back to the master branch. The master is where to most refined and well-tested final code lives.
+Let’s consider an example. Pretend you own a bike shop, and you need to print out tags for each bike on your sales floor listing the bike brand, model, year, and price. You also need to be able to modify the price easily in case the bike goes on sale. Classes are a perfect way to store and access this information. They let you define a “Bike” class that you can use for all of the many types of bikes you’re selling that you’ll need to tag.
 </p>
 <p>
-	Using Git to store code is beneficial because it is open source and it lets others see your work and comment, collaborate, or learn. Conversely, you can look at other people's projects and learn from them. Aside from being a great collaboration tool, GitHub offers you all the benefits of version control that let you keep close track of the work you are doing on your code without losing anything.</p>
+You would start by defining a class called “Bike.” Within that class you would want to create methods to take information on the bike, enter a discount amount, and finally print out a tag to put on each bike.
+</p>
+<br>
+<img src ="../Images/initialize">
+<br>
+<p>
+First you would initialize your new item in the Bike class by requiring information on the bike brand, model, year, and MSRP price. All this information is assigned and stored within the class using an instance variable. By typing an “@” before the variable name, you allow the varialbe to be used in other methods within the same class. There are other types of variables that you can create by typing other symbols before the variable name, including global variables (“$”) and class variables (“@@”). You can read more about these other types of variables in Ruby docs.
+</p>
+<p>
+Now that we stored the basic information on the bike using the “initialize” method, we need to create methods to access and modify the information. Let’s create a “discount” method that lets you enter a percentage discount on the the original price. In that method, we’ll create code to take a percentage off the original manufacturer’s suggested retail price of the bike:
+</p>
+<br>
+<img src ="../Images/discount">
+<br>
+<p>
+Now all we need to do is great a “tag” method that prints out a tag will all the pertinent info on the bike. We’ll want to make sure to list all the info on the bike, included the modified sale price.
+</p>
+<br>
+<img src ="../Images/call">
+<br>
+<p>
+Once that method is created, we simply create a new class instance called “my_bike,” enter the info for a bike - for example, a 2014 Specialized Stumpsumper - then call our “discount” and “tag” methods. Then we can post the tag on our bikes and wait for the customers to stream into the shop!
+</p>
 </div>
+
 <div id="sidebar">
 	<div id="previousposts">
 		<h2><u><!-- Insert Title here -->Previous Posts</u></h2>

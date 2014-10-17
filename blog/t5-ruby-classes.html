@@ -58,9 +58,11 @@
 <p>
 Classes are one of the cornerstones of Ruby programs. They help store and access data about common types of items. Classes also let you create and apply your own unique methods on specific items. Because you can create many types of classes and methods within each class, they are one of the most flexible and versatile ways Ruby has to handle storing large amounts of information.
 </p>
+<br>
 <p>
 Let’s consider an example. Pretend you own a bike shop, and you need to print out tags for each bike on your sales floor listing the bike brand, model, year, and price. You also need to be able to modify the price easily in case the bike goes on sale. Classes are a perfect way to store and access this information. They let you define a “Bike” class that you can use for all of the many types of bikes you’re selling that you’ll need to tag.
 </p>
+<br>
 <p>
 You would start by defining a class called “Bike.” Within that class you would want to create methods to take information on the bike, enter a discount amount, and finally print out a tag to put on each bike.
 </p>
@@ -68,8 +70,9 @@ You would start by defining a class called “Bike.” Within that class you wou
 <img src ="../Images/initialize.png">
 <br>
 <p>
-First you would initialize your new item in the Bike class by requiring information on the bike brand, model, year, and MSRP price. All this information is assigned and stored within the class using an instance variable. By typing an “@” before the variable name, you allow the varialbe to be used in other methods within the same class. There are other types of variables that you can create by typing other symbols before the variable name, including global variables (“$”) and class variables (“@@”). You can read more about these other types of variables in Ruby docs.
+First you would initialize your new item in the Bike class by requiring information on the bike brand, model, year, and MSRP price. All this information is assigned and stored within the class using an instance variable. By typing an “@” before the variable name, you allow the varialbe to be used in other methods within the same class. There are other types of variables that you can create by typing other symbols before the variable name, including global variables (“$”) and class variables (“@@”). You can read more about these other types of variables in <a href="http://www.ruby-doc.org/core-2.1.3/Class.html">Ruby docs<a>.
 </p>
+<br>
 <p>
 Now that we stored the basic information on the bike using the “initialize” method, we need to create methods to access and modify the information. Let’s create a “discount” method that lets you enter a percentage discount on the the original price. In that method, we’ll create code to take a percentage off the original manufacturer’s suggested retail price of the bike:
 </p>

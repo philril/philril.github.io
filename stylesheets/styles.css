@@ -29,6 +29,7 @@ div {
 	margin: 0 auto;
 	display: table;
 	font-size: 1.5em;
+	padding: 13px;
 }
 
 #wrapper {
@@ -177,8 +178,8 @@ div {
 	height:200px;
 	position: absolute;
 	float: left;
-	bottom: 115px;
-	left: 38%;
+	bottom: 130px;
+	left: 42%;
 	font-size:0.75em;
 }
 

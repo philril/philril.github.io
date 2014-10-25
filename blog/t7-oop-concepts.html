@@ -1,0 +1,138 @@
+<html>
+
+
+<head>
+	<title>Results May Vary</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link href="../index_files/css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+</head>
+
+
+<body>
+
+<div id="wrapper">
+
+<div id="header">
+	<div id="name">
+		<h1>PHILIP RILEY</h1>
+	</div>
+</div>
+
+<div id="nav-bar">
+	<ul>
+		<li><a href="http://philril.github.io/index.html" style="
+    color: white;
+">Home</a></li>
+		<li><a href="http://philril.github.io/about-me.html" style="
+    color: white;
+">About Me</a></li>
+		<li><a href="http://philril.github.io/projects.html" style="
+    color: white;
+">Portfolio</a></li>
+		<li><a href="http://philril.github.io/blog-index.html" style="
+    color: white;
+">Blog</a></li>
+		<li><a href="http://philril.github.io/contact.html" style="
+    color: white;
+">Contact</a></li>
+	</ul>
+</div>
+
+
+<div id="main-area-blog">
+
+<div id="title">
+	<h1>Blog</h1>
+</div>
+
+<div id="content">
+	<h1><!-- Insert title here -->Results May Vary</h1>
+	<br>
+	<h2>Week <!-- Insert week # here -->6</h2>
+	<br>
+	<h2><!-- Insert subtitle here -->Variable Scoping and the Five Types of Variables</h2>
+	<br>
+	<p><!-- Insert date here -->October 24, 2014</p>
+	<br>
+<p>Ruby variables are one of the most basic building blocks in code, a place to store data and access it later. Variables can store any object, for example an array, integer, string, and so on. But to make variables even more versatile, variable scoping allows variables to be accessible in specific situations. This helps protect data by making it accessible at certain levels in your program but not others.</p>
+<br>
+<p>Ruby has a number of different types of variables which each have a different scope:</p>
+<br>
+<p><u>Constants</u></p>
+<p>Constants are variables intended to be set only once and are accessible from anywhere within the place they were set. If they are set outside an object, they are accessible globally throughout a program, like in the example below. If they are set within a class or method, they are accessible only within that class or method. Although it is possible to change Constants, a warning message comes up verifying your intent. Constants are specified by writing the variable name in all caps.</p>
+<br>
+<img src="../Images/constant.png">
+<br>
+<p><u>Global Variables</u></p>
+<p>Global variables are accessible from anywhere within the program, regardless of where they are declared. They are denoted with a dollar sign (“$”) in front of the variable name. Unlike constants, global variables can be changed easily without a warning message. Global variables are used sparingly because they can be read and written from anywhere in the program, which makes tracking bugs difficult. In the following example, the “.print” method would print the global variable as “1”, since even though it was declared outside the class, it was changed within a method:</p>
+<br>
+<img src="../Images/global_variable.png">
+<br>
+<p><u>Class Variables</u></p>
+<p>Class variables are shared among all instances of a particular class. This means that if an object changes the class variable, it will be changed for all instances of the class variable later on. Class variables are denoted with two “at signs” (“@@”) before the variable name and are initialized when the class is created. A useful example for class variables is to create an array that your class methods would append and update each time, like so:</p>
+<br>
+<img src="../Images/class_variable.png">
+<br>
+<p><u>Instance Variables</u></p>
+<p>Some of the most commonly used variables are instance variables. Denoted with one “at sign” (“@”), instance variables are local to specific instances of an object. They let you use the same variable across all the methods within your class. For example you might have the object of a class called “Pizza,” and set an instance variable called “@flavor” which would allow you to access (but not change) the flavor in any method within the Pizza class:</p>
+<br>
+<img src="../Images/instance_variable.png">
+<br>
+<p><u>Local Variables</u></p>
+<p>Lastly, local variables the most basic type of variable and have no designation or symbol before their name. Local variables are only accessible where they are declared. For example, a local variable declared within a method is only accessible within that method. In the following case, “array” and “counter” are local variables, and they are only accessible within the “separate_comma” method:</p>
+<br>
+<img src="../Images/local_variable.png">
+<br>
+<p>The five types of variables give you a good way to store or access data for any situation within a program. In some cases, you may want to make your variable easy to be used and reset anywhere. In other cases, you would want to keep your variable constant throughout the program. Variable scoping lets you do that, ultimately allowing you to do more with your program.</p>
+</div>
+
+<div id="sidebar">
+	<div id="previousposts">
+		<h2><u><!-- Insert Title here -->Previous Posts</u></h2>
+		<ul>
+			<li><a href="http://philril.github.io/blog/c6-stereotype-threat.html" style="color: white;"><!-- Insert post here -->Mind Games</a></li>
+			<li><a href="http://philril.github.io/blog/t7-oop-concepts.html" style="color: white;"><!-- Insert post here -->Results May Vary</a></li>
+			<li><a href="http://philril.github.io/blog/c5-feedback.html" style="color: white;"><!-- Insert post here -->Two Heads are Better Than One</a></li>
+			<li><a href="http://philril.github.io/blog/t5-ruby-classes.html" style="color: white;"><!-- Insert post here -->Keeping it Classy</a></li>
+			<li><a href="http://philril.github.io/blog/c4-tech-issues.html" style="color: white;"><!-- Insert post here -->Silicon Valley's false promise of meritocracy</a></li>
+			<li><a href="http://philril.github.io/blog/t4-enumerable-methods.html" style="color: white;"><!-- Insert post here -->Array Cartography</a></li>
+			<li><a href="http://philril.github.io/blog/c3-thinking-style.html" style="color: white;"><!-- Insert post here -->Thinking About Thinking</a></li>
+			<li><a href="http://philril.github.io/blog/t4-arrays-hashes.html" style="color: white;"><!-- Insert post here -->Storage Wars</a></li>
+			<li><a href="http://philril.github.io/pair-page/gps1.1.html" style="color: white;"><!-- Insert post here -->Pair Programming Basics</a></li>
+			<li><a href="http://philril.github.io/blog/t2-css-design.html" style="color: white;"><!-- Insert post here -->Situational Awareness</a></li>
+			<li><a href="http://philril.github.io/blog/t1-git-blog.html" style="color: white;"><!-- Insert post here -->Laying the Groundwork</a></li>
+			<li><a href="http://philril.github.io/blog/c1-chefs-kitchen.html" style="color: white;"><!-- Insert post here -->Be a Creator, Not a Consumer</a></li>
+		</ul>
+	</div>
+
+	<div id="categories">
+		<h2><u><!-- Insert Title here -->Categories</u></h2>
+		<ul>
+			<li><a href="http://philril.github.io/blog/technical-index.html" style="color: white;"><!-- Insert category here -->Technical posts</a></li>
+			<li><a href="http://philril.github.io/blog/cultural-index.html" style="color: white;"><!-- Insert category here -->Cultural posts</a></li>
+		</ul>
+	</div>
+
+	</div>
+
+</div>
+
+<div id="social-media">
+	<ul>
+		<li><a href="https://twitter.com/phil_ril"><img src="../Images/twitter.png"></a></li><!-- Twitter -->
+		<li><a href="https://www.linkedin.com/pub/philip-riley/16/382/a47"><img src="../Images/linkedin.png"></a></li><!-- LinkedIn -->
+		<li><a href="https://www.facebook.com/hiriley"><img src="../Images/facebook.png"></a></li><!-- Facebook -->
+		<li><a href="https://plus.google.com/u/0/105410315172366153717/posts"><img src="../Images/googleplus.png"></a></li><!--+Google= -->
+	</ul>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -23,21 +23,21 @@
 
 <tr>
   <td class="name">.map/collect</td>
-  <td>Returns a new array with the results of each item in block</td>
+  <td>Returns a new array with the results of each item passed through the given block.</td>
   <td class="example">[1,2,3,4].map {|num| num * 2}</td>
   <td class="output">=> [2,4,6,8]</td>
 </tr>
 
 <tr>
   <td class="name">.any?</td>
-  <td>Returns true/false by checking if element meets criteria in block</td>
+  <td>Returns true/false by checking if any element meets criteria in given block.</td>
   <td class="example">[1,2,3,4].any? {|num| num % 5 == 0}</td>
   <td class="output">=> false</td>
 </tr>
 
 <tr>
   <td class="name">.all?</td>
-  <td>Returns true/false by checking all elements meet criteria in block</td>
+  <td>Returns true/false by checking if all elements meet criteria in given block.</td>
   <td class="example">[1,2,3,4].all? {|num| num < 10}</td>
   <td class="output">=> true</td>
 </tr>
@@ -51,7 +51,7 @@
 
 <tr>
   <td class="name">.include?</td>
-  <td>Returns true/false whether enumerable contains object.</td>
+  <td>Returns true/false to answer whether enumerable contains object within parentheses.</td>
   <td class="example">[1,2,3,4].include?(2)</td>
   <td class="output">=> true</td>
 </tr>

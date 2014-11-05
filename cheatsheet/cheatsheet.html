@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title>Ruby Enumerable Methods</title>
+  <link type="text/css" rel="stylesheet" href="../cheatsheet/cheatsheet.css">
+</head>
+
+<body>
+
+<h1>Ruby Enumerable Methods</h1>
+
+<h4>By Philip Riley and Matt DuBois</h4>
+
+<p>Ruby has a number of built-in searching and sorting methods that can be used on various types of collection classes, including arrays, hashes, strings and ranges of numbers. These enumerable methods are powerful tools to collect only the elements that pass through blocks of code that you specify. In order to use these enumerable methods, the collection class must have a built in ".each" method. The methods then work off the ".each" method. Enumerables are typically used on arrays and hashes, but it's important to remember they can also work on strings or ranges of numbers. Below is a table of some of the most useful and commonly used enumerable methods. More methods can be found in <a style= "color: white" href="http://ruby-doc.org/core-2.1.4/Enumerable.html">Ruby Docs</a>.</p>
+
+
+<table>
+<tr style="background: #CCCCCC">
+  <th>Method Name</th>
+  <th>Description</th>
+  <th>Example</th>
+  <th>Output</th>
+</tr>
+
+<tr>
+  <td class="name">.map/collect</td>
+  <td>Returns a new array with the results of each item in block</td>
+  <td class="example">[1,2,3,4].map {|num| num * 2}</td>
+  <td class="output">=> [2,4,6,8]</td>
+</tr>
+
+<tr>
+  <td class="name">.any?</td>
+  <td>Returns true/false by checking if element meets criteria in block</td>
+  <td class="example">[1,2,3,4].any? {|num| num % 5 == 0}</td>
+  <td class="output">=> false</td>
+</tr>
+
+<tr>
+  <td class="name">.all?</td>
+  <td>Returns true/false by checking all elements meet criteria in block</td>
+  <td class="example">[1,2,3,4].all? {|num| num < 10}</td>
+  <td class="output">=> true</td>
+</tr>
+
+<tr>
+  <td class="name">.each_with_index</td>
+  <td>Calls a block with two elements, one for each element and one for each index.</td>
+  <td class="example">[1,2,3,4].each_with_index {|num, index| puts num * index}</td>
+  <td class="output">=> 0,2,6,12</td>
+</tr>
+
+<tr>
+  <td class="name">.include?</td>
+  <td>Returns true/false whether enumerable contains object.</td>
+  <td class="example">[1,2,3,4].include?(2)</td>
+  <td class="output">=> true</td>
+</tr>
+
+<tr>
+  <td class="name">.inject</td>
+  <td>Each element is passed an accumulator value and element. Each element is passed through block, result is stored in accumulator value.</td>
+  <td class="example">[1,2,3,4].inject {|sum, num| sum + num}</td>
+  <td class="output">=> 10</td>
+</tr>
+
+</table>
+
+</body>
+</html>

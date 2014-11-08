@@ -168,9 +168,9 @@ div {
 	left: 5%;
 	border-radius: 100%;
 	background-image:url("http://philril.github.io//Images/headshot2.png");
-	background-size: 100%;
+	background-size: 150%;
 	border:1px solid white;
-	background-position: center bottom;
+	background-position: center left -120;
 }
 
 #personal-intro {

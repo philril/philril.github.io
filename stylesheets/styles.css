@@ -120,14 +120,13 @@ div {
 	position: absolute;
 	float:left;
 	left:65px;
-	top:65px;
-	overflow:scroll;
 	text-shadow:1px 1px black;
 }
 
-#contact h1, p {
+#contact td {
 	text-align:center;
-	font-size:2em;
+	font-size:2.25em;
+	padding: 50px
 }
 
 #content h1, h2, p, img {
@@ -168,9 +167,9 @@ div {
 	left: 5%;
 	border-radius: 100%;
 	background-image:url("http://philril.github.io//Images/coast.png");
-	background-size: 150%;
+	background-size: 100%;
 	border:1px solid white;
-	background-position: center left -120;
+	background-position: center left;
 }
 
 #personal-intro {

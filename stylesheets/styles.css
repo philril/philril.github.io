@@ -178,8 +178,8 @@ div {
 	position: absolute;
 	float: left;
 	bottom: 136px;
-	left: 44%;
-	font-size:0.75em;
+	left: 48%;
+	font-size:1.5em;
 }
 
 #personal-intro-about {
@@ -189,7 +189,7 @@ div {
 	float: left;
 	bottom: 240px;
 	left: 50%;
-	font-size:0.75em;
+	font-size:1.35em;
 }
 
 #project-staging {

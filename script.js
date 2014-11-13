@@ -1,3 +1,3 @@
-$document.ready(function() {
-  $("#image").fadeIn("fast")
+$(document).ready(function() {
+  $("#image").fadeIn("slow")
 };

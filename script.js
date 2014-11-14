@@ -1,4 +1,4 @@
-$(document).ready(function() {
+p$(document).ready(function() {
 
   $("#personal-intro").css({"opacity":"0"})
   $("#index-title").css({"opacity":"0"})

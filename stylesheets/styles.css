@@ -3,12 +3,16 @@ div, ul, li , h1, h2, h3, img {
 
 body {
 		background: gray;
+		padding:0px;
+		margin:0;
 }
 
 html {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color: white;
 	text-shadow: 1px 1px black;
+	padding:0px;
+	margin:0;
 }
 
 div {
@@ -24,12 +28,14 @@ div {
 	text-shadow: 2px 2px black;
 }
 
-#title {
+.title {
 	text-shadow: 2px 2px black;
 	margin: 0 auto;
 	display: table;
 	font-size: 1.5em;
 	padding: 13px;
+	/*position:absolute;*/
+	top:0px;
 }
 
 
@@ -37,13 +43,17 @@ div {
 	text-shadow: 2px 2px black;
 	margin: 0 auto;
 	display: table;
-	font-size: 1.5em;
+	font-size: 2em;
 	padding: 13px;
+	top: 25px;
+	position: relative;
+
 }
 
 #wrapper {
-	width: 1150px;
+	width: 100%
 	margin: 0 auto;
+	padding:0;
 	position: relative;
 }
 
@@ -58,9 +68,10 @@ div {
 	margin: 0 auto;
 	height: 35px;
 	border:  1px solid black;
-	width: 90%;
+	width: 100%;
 	background: black;
 	opacity: 0.5;
+	/*position:fixed;*/
 }
 
 #nav-bar ul {
@@ -79,15 +90,57 @@ div {
 }
 
 #main-area {
-	width: 90%;
-	height: 542px;
-	position: relative;
-	display:block;
-	margin: 0 auto;
-	background-image: url("http://philril.github.io//Images/oakland.png");
-	background-size: 150%;
-	background-position: center left;
+	width: 100%;
+	height: 680px;
+	background: url(http://philril.github.io//Images/oakland.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position:relative;
+}
 
+#main-area2 {
+	width: 100%;
+	height: 680px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position:relative;
+}
+
+#main-area3 {
+	width: 100%;
+	height: 680px;
+	background: url(http://philril.github.io//Images/oakland.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position:relative;
+}
+
+#main-area4 {
+	width: 100%;
+	height: 680px;
+	/*background: url(http://philril.github.io//Images/oakland.png) no-repeat center center fixed;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position:relative;
+}
+
+#main-area5 {
+	width: 100%;
+	height: 680px;
+	background: url(http://philril.github.io//Images/oakland.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position:relative;
 }
 
 #main-area-blog{
@@ -103,19 +156,20 @@ div {
 }
 
 #content {
-	width:750px;
-	height:600px;
-	display: block;
-	position: absolute;
-	float:left;
-	left:50px;
-	top:65px;
-	overflow:scroll;
+	width: 850px;
+	height: 511px;
+	display: inline-block;
+	top: 65px;
+	overflow: scroll;
+	text-align: center;
+	letter-spacing:0.25em;
 }
 
 #content p {
 	text-align:left;
 	font-size:1.3em;
+	display: inline-block;
+	letter-spacing:0.25em;
 }
 
 #content img {
@@ -123,13 +177,14 @@ div {
 }
 
 #contact {
-	width:900px;
-	height:300px;
-	display: block;
-	position: absolute;
-	float:left;
-	left:65px;
-	text-shadow:1px 1px black;
+	width: 900px;
+	height: 300px;
+	/* display: block; */
+	position: relative;
+	/* float: left; */
+	/* left: 65px; */
+	text-shadow: 1px 1px black;
+	margin: 0 auto;
 }
 
 #contact td {
@@ -143,13 +198,11 @@ div {
 }
 
 #sidebar {
-	width: 170px;
-	height:600px;
-	position:absolute;
-	display:block;
-	float:left;
-	left:810px;
-	top:65px;
+	width: 230px;
+	height: 511px;
+	display: inline-block;
+	top: 65px;
+	overflow: scroll;
 }
 
 #sidebar h2 {
@@ -158,79 +211,98 @@ div {
 
 #image {
 	width: 500px;
-	height: 359px;
-	position: absolute;
+	/*height: 600px;*/
+	position: relative;
 	display:inline-block;
-	bottom: 115px;
+	bottom: -30px;
 	float: left;
-	left: 3%;
+	left: 6%;
+	opacity:1;
 }
 
 #image2 {
-	width: 400px;
-	height: 400px;
+	width: 500;
+	height: 500px;
 	position: absolute;
-	display:inline-block;
-	bottom: 120px;
-	float: left;
-	left: 5%;
+	display: inline-block;
+	bottom: 11%;
+	/* top: 50%; */
+	float: right;
+	right: 5%;
 	border-radius: 100%;
-	background-image:url("http://philril.github.io//Images/dbcheadshot.png");
+	 background-image: url("http://philril.github.io//Images/coast2.png");
 	background-size: 100%;
-	border:1px solid white;
+	border: 1px solid white;
 	background-position: center left;
 }
 
 #personal-intro {
 	width: 450px;
-	height:200px;
+	height:207px;
 	position: absolute;
 	float: left;
-	bottom: 136px;
-	left: 48%;
-	font-size:1.5em;
+	bottom: 202px;
+	left: 49%;
+	font-size:2em;
+	text-align: center
 }
 
 #personal-intro-about {
-	width: 450px;
-	height:200px;
+	width: 516px;
+	height: 247px;
 	position: absolute;
-	float: left;
-	bottom: 240px;
-	left: 50%;
-	font-size:1.35em;
+	float: right;
+	bottom: 327px;
+	right: 52%;
+	font-size: 2em;
 }
 
 #project-staging {
-	display:table-cell;
-	position:absolute;
-	top:66px;
-	float:left;
-	left:30px;
-	right:auto;
+	display:table;
+	top:45px;
+	position:relative;
+	margin:0 auto;
+}
+
+#blog-box {
+	display:table;
+	position:relative;
+	margin:0 auto;
 }
 
 .project {
+	height:350px;
+	width:350px;
+	display:inline-block;
+	margin:10px;
+	/*position:absolute;*/
+}
+
+.project #snip {
 	height:300px;
 	width:300px;
 	display:inline-block;
 	margin:10px;
+	position:absolute;
 }
 
 
 #social-media {
+	height: 85px;
+	width: 501px;
 	margin: 0 auto;
-	width: 100%;
-	background: black;
-	opacity: 0.5;
-	bottom: 0px;
-	position:absolute;
+	display:table;
+	/*background: white;*/
+	/*opacity: 0.5;*/
+	bottom: 106px;
+	position:relative;
 }
 
-#social-media ul li {
+#social-media div {
 	display: inline-block;
-	width: 160px;
-	height: 60px;
+	width: 90px;
+	height: 90px;
 	padding: 5px;
-	margin-left: 67px;
+	/*background-color: white;*/
+	margin:10px;
 }

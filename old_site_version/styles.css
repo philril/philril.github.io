@@ -1,0 +1,236 @@
+div, ul, li , h1, h2, h3, img {
+}
+
+body {
+		background: gray;
+}
+
+html {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+div {
+	border:;
+}
+
+#name {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	display: table;
+	font-size: 2em;
+	text-shadow: 2px 2px black;
+}
+
+#title {
+	text-shadow: 2px 2px black;
+	margin: 0 auto;
+	display: table;
+	font-size: 1.5em;
+	padding: 13px;
+}
+
+
+#index-title {
+	text-shadow: 2px 2px black;
+	margin: 0 auto;
+	display: table;
+	font-size: 1.5em;
+	padding: 13px;
+}
+
+#wrapper {
+	width: 1150px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header {
+	height: 115px;
+	width:100%;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.5em;
+}
+
+#nav-bar {
+	margin: 0 auto;
+	height: 35px;
+	border:  1px solid black;
+	width: 90%;
+	background: black;
+	opacity: 0.5;
+}
+
+#nav-bar ul {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	display: table;
+}
+
+#nav-bar ul li {
+	display: table-cell;
+	width: 15%;
+	vertical-align: middle;
+	line-height: 35px;
+	font-size: 1.5em;
+}
+
+#main-area {
+	width: 90%;
+	height: 542px;
+	position: relative;
+	display:block;
+	margin: 0 auto;
+	background-image: url("http://philril.github.io//Images/oakland.png");
+	background-size: 150%;
+	background-position: center left;
+
+}
+
+#main-area-blog{
+	width: 90%;
+	height: 800px;
+	position:relative;
+	display: block;
+	margin:0 auto;
+	background-image: url("http://philril.github.io//Images/oakland.png");
+	background-position:center left;
+	background-size:177%;
+	background-repeat:no-repeat;
+}
+
+#content {
+	width:750px;
+	height:600px;
+	display: block;
+	position: absolute;
+	float:left;
+	left:50px;
+	top:65px;
+	overflow:scroll;
+}
+
+#content p {
+	text-align:left;
+	font-size:1.3em;
+}
+
+#content img {
+	text-align:center;
+}
+
+#contact {
+	width:900px;
+	height:300px;
+	display: block;
+	position: absolute;
+	float:left;
+	left:65px;
+	text-shadow:1px 1px black;
+}
+
+#contact td {
+	text-align:center;
+	font-size:2.25em;
+	padding: 50px
+}
+
+#content h1, h2, p, img {
+	margin:5px;
+}
+
+#sidebar {
+	width: 170px;
+	height:600px;
+	position:absolute;
+	display:block;
+	float:left;
+	left:810px;
+	top:65px;
+}
+
+#sidebar h2 {
+	text-align:center;
+}
+
+#image {
+	width: 500px;
+	height: 359px;
+	position: absolute;
+	display:inline-block;
+	bottom: 115px;
+	float: left;
+	left: 3%;
+}
+
+#image2 {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	display:inline-block;
+	bottom: 120px;
+	float: left;
+	left: 5%;
+	border-radius: 100%;
+	background-image:url("http://philril.github.io//Images/dbcheadshot.png");
+	background-size: 100%;
+	border:1px solid white;
+	background-position: center left;
+}
+
+#personal-intro {
+	width: 450px;
+	height:200px;
+	position: absolute;
+	float: left;
+	bottom: 136px;
+	left: 48%;
+	font-size:1.5em;
+}
+
+#personal-intro-about {
+	width: 450px;
+	height:200px;
+	position: absolute;
+	float: left;
+	bottom: 240px;
+	left: 50%;
+	font-size:1.35em;
+}
+
+#project-staging {
+	display:table-cell;
+	position:absolute;
+	top:66px;
+	float:left;
+	left:30px;
+	right:auto;
+}
+
+.project {
+	height:300px;
+	width:300px;
+	display:inline-block;
+	margin:10px;
+}
+
+
+#social-media {
+	margin: 0 auto;
+	width: 100%;
+	background: black;
+	opacity: 0.5;
+	bottom: 0px;
+	position:absolute;
+}
+
+#social-media ul li {
+	display: inline-block;
+	width: 160px;
+	height: 60px;
+	padding: 5px;
+	margin-left: 67px;
+}

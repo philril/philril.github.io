@@ -89,6 +89,10 @@ div {
 	font-size: 1.5em;
 }
 
+#nav-bar ul li a{
+	text-decoration: none
+}
+
 #main-area {
 	width: 100%;
 	height: 680px;
@@ -210,14 +214,23 @@ div {
 }
 
 #image {
-	width: 500px;
-	/*height: 600px;*/
+	width: 600px;
+	height: 500px;
 	position: relative;
 	display:inline-block;
 	bottom: -30px;
 	float: left;
 	left: 6%;
 	opacity:1;
+/*	position:relative;*/
+	position: absolute;
+	bottom: 0;
+	overflow: hidden;
+}
+
+#image img{
+	position:absolute;
+	bottom:-5px;
 }
 
 #image2 {

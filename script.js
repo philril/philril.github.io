@@ -3,11 +3,17 @@ $(document).ready(function() {
   $("#personal-intro").css({"opacity":"0"})
   $("#index-title").css({"opacity":"0"})
 
-  $("#image").css({"height":"0px"});
-  $("#image").animate({"height":"359px"}, 700, function() {
+  $("#image img").css({"height":"0px"});
+  $("#image img").animate({"height":"500px"}, 700, function() {
     $("#index-title").animate({"opacity":"1"},500);
     $("#personal-intro").animate({"opacity":"1"}, 500);
   });
+
+  // $("#image img").css({"opacity":"0"})
+  //   $("#image img").animate({"opacity":"1"},500, function(){
+  //     $("#index-title").animate({"opacity":"1"},700);
+  //     $("#personal-intro").animate({"opacity":"1"},700);
+  //   })
 
   $("#nav-bar ul li").mouseenter(function() {
     $(this).animate({"font-size":"+=0.5em"})

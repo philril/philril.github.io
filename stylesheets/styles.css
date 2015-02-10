@@ -112,6 +112,7 @@ div {
 	-o-background-size: cover;
 	background-size: cover;
 	position:relative;
+	overflow: scroll;
 }
 
 #main-area3 {
@@ -123,6 +124,7 @@ div {
 	-o-background-size: cover;
 	background-size: cover;
 	position:relative;
+	overflow:scroll;
 }
 
 #main-area4 {
@@ -160,13 +162,13 @@ div {
 }
 
 #content {
-	width: 850px;
+	width: 700px;
 	height: 511px;
 	display: inline-block;
 	top: 65px;
 	overflow: scroll;
-	text-align: center;
-	letter-spacing:0.25em;
+	/*text-align: center;*/
+	/*letter-spacing:0.25em;*/
 }
 
 #content p {
@@ -238,15 +240,22 @@ div {
 	height: 500px;
 	position: absolute;
 	display: inline-block;
-	bottom: 11%;
+	bottom: 10%;
 	/* top: 50%; */
-	float: right;
-	right: 5%;
+	float: left;
+	left: 52%;
 	border-radius: 100%;
-	 background-image: url("http://philril.github.io//Images/coast2.png");
+	background-image: url("http://philril.github.io//Images/coast2.png");
 	background-size: 101%;
 	border: 1px solid white;
 	background-position: center left;
+	padding: 0;
+}
+
+#about-box {
+	display: table;
+	position: relative;
+	margin: 0 auto;
 }
 
 #personal-intro {
@@ -261,13 +270,15 @@ div {
 }
 
 #personal-intro-about {
-	width: 516px;
-	height: 247px;
+	width: 464px;
+	height: 525;
 	position: absolute;
-	float: right;
-	bottom: 327px;
-	right: 52%;
+	float: left;
+	bottom: 13%;
+	left: 5%;
 	font-size: 2em;
+	z-index: 1;
+	padding: 0;
 }
 
 #project-staging {
@@ -283,10 +294,15 @@ div {
 	margin:0 auto;
 }
 
+#blog-box a{
+	text-decoration: none
+}
+
+
 .project {
 	height:350px;
 	width:350px;
-	display:inline-block;
+	display:table-cell;
 	margin:10px;
 	/*position:absolute;*/
 }
@@ -304,11 +320,12 @@ div {
 	height: 85px;
 	width: 501px;
 	margin: 0 auto;
-	display:table;
-	/*background: white;*/
-	/*opacity: 0.5;*/
-	bottom: 106px;
-	position:relative;
+	display: table;
+	background: white;
+	opacity: 0.5;
+	border-radius: 100px;
+	bottom: 4%;
+	position: relative;
 }
 
 #social-media div {

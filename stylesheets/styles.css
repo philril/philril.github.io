@@ -203,7 +203,7 @@ div {
 #content {
 	width: 860px;
 /*	height: 603px;*/
-	height:90%;
+	height:75%;
 	display: inline-block;
 	top: 65px;
 	overflow: scroll;

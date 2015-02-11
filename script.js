@@ -28,12 +28,12 @@ $(document).ready(function() {
     $(this).animate({"font-size":"-=0.5em"})
   });
 
-  $('.project').mouseenter(function(){
-    $(this).css("box-shadow","20px 20px 20px black")
-  });
+  // $('.project').mouseenter(function(){
+  //   $(this).css("box-shadow","20px 20px 20px black")
+  // });
 
-  $('.project').mouseleave(function(){
-    $(this).css("box-shadow","")
-  });
+  // $('.project').mouseleave(function(){
+  //   $(this).css("box-shadow","")
+  // });
 
 });

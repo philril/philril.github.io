@@ -93,6 +93,8 @@ div {
 	text-decoration: none
 }
 
+
+
 #main-area {
 	width: 100%;
 	height: 680px;
@@ -151,17 +153,25 @@ div {
 
 #main-area-blog{
 	width: 90%;
-	height: 800px;
+	height: 90%;
+
+	background: url(http://philril.github.io//Images/oakland.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	position:relative;
-	display: block;
+	padding:5px;
 	margin:0 auto;
-	background-image: url("http://philril.github.io//Images/oakland.png");
-	background-position:center left;
-	background-size:177%;
-	background-repeat:no-repeat;
+
+	overflow: hidden;
 }
 
-#content {
+#main-area-blog h1 {
+	text-align: center
+}
+
+#content-index {
 	width: 700px;
 	height: 511px;
 	display: inline-block;
@@ -171,15 +181,34 @@ div {
 	/*letter-spacing:0.25em;*/
 }
 
-#content p {
+#content-index p {
 	text-align:left;
 	font-size:1.3em;
 	display: inline-block;
-	letter-spacing:0.25em;
+	/*letter-spacing:0.25em;*/
 }
 
 #content img {
 	text-align:center;
+}
+
+#content h1, h2, p, img {
+	margin:5px;
+}
+
+#content-index h1, h2, p, img {
+	margin:5px;
+}
+
+#content {
+	width: 860px;
+/*	height: 603px;*/
+	height:90%;
+	display: inline-block;
+	top: 65px;
+	overflow: scroll;
+	/*text-align: center;*/
+	/*letter-spacing:0.25em;*/
 }
 
 #contact {
@@ -199,13 +228,21 @@ div {
 	padding: 50px
 }
 
-#content h1, h2, p, img {
-	margin:5px;
+#sidebar-index {
+	width: 230px;
+	height: 511px;
+	display: inline-block;
+	top: 65px;
+	overflow: scroll;
+}
+
+#sidebar-index h2 {
+	text-align:center;
 }
 
 #sidebar {
 	width: 230px;
-	height: 511px;
+	height: 80%;
 	display: inline-block;
 	top: 65px;
 	overflow: scroll;
@@ -320,7 +357,7 @@ div {
 }
 
 
-#social-media {
+#social-media-index {
 	height: 85px;
 	width: 501px;
 	margin: 0 auto;
@@ -332,11 +369,40 @@ div {
 	position: relative;
 }
 
-#social-media div {
+#social-media-index div {
 	display: inline-block;
 	width: 90px;
 	height: 90px;
 	padding: 5px;
 	/*background-color: white;*/
 	margin:10px;
+}
+
+#social-media {
+	margin: 0 auto;
+	width: 100%;
+	background: black;
+	opacity: 1;
+	bottom: 0px;
+	position:absolute;
+	overflow:scroll;
+	display:table;
+}
+
+#social-media ul {
+width: 90%;
+text-align: center;
+margin: 0 auto;
+display: table;
+}
+
+#social-media ul li {
+	display: table-cell;
+	width: 60px;
+	height: 60px;
+	padding: 5px;
+	/*margin-left: 92px;*/
+	overflow: hidden;
+	margin:0 auto;
+	overflow:scroll;
 }

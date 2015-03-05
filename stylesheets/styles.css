@@ -108,13 +108,16 @@ div {
 
 #main-area2 {
 	width: 100%;
-	height: 680px;
+	min-height: 680px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	position:relative;
-	overflow: scroll;
+	position: relative;
+	/* overflow: scroll; */
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 40px;
 }
 
 #main-area3 {
@@ -285,18 +288,14 @@ div {
 #image2 {
 	width: 500;
 	height: 500px;
-	position: absolute;
+	position: relative;
 	display: inline-block;
-	bottom: 10%;
-	/* top: 50%; */
-	float: left;
-	left: 52%;
 	border-radius: 100%;
 	background-image: url("http://philril.github.io//Images/coast2.png");
 	background-size: 101%;
 	border: 1px solid white;
 	background-position: center left;
-	padding: 0;
+	padding: 26px;
 }
 
 #about-box {
@@ -317,15 +316,13 @@ div {
 }
 
 #personal-intro-about {
-	width: 464px;
-	height: 525;
-	position: absolute;
-	float: left;
-	bottom: 13%;
-	left: 5%;
+	width: 500px;
+	height: 500px;
+	position: relative;
 	font-size: 2em;
-	z-index: 1;
-	padding: 0;
+	padding: 10px;
+	display: inline-block;
+	top: -43px;
 }
 
 /*#project-staging {
@@ -344,11 +341,6 @@ div {
 #blog-box a{
 	text-decoration: none
 }
-/*
-.project:hover{
-	-webkit-box-shadow: 20px 20px 20px black;
-	background:black;
-}*/
 
 .project {
 	height: 355px;
@@ -358,6 +350,10 @@ div {
 	position: relative;
 	padding: 5px;
 	padding-top: 40px;
+}
+
+.project img:hover {
+	box-shadow:10px 10px 20px black;
 }
 
 #social-media-index {

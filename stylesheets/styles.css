@@ -119,14 +119,16 @@ div {
 
 #main-area3 {
 	width: 100%;
-	height: 680px;
+	min-height: 680px;
 	background: url(http://philril.github.io//Images/oakland.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	position:relative;
-	overflow:scroll;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 40px;
 }
 
 #main-area4 {
@@ -326,12 +328,12 @@ div {
 	padding: 0;
 }
 
-#project-staging {
+/*#project-staging {
 	display:table;
 	top:45px;
 	position:relative;
 	margin:0 auto;
-}
+}*/
 
 #blog-box {
 	display:table;
@@ -342,28 +344,21 @@ div {
 #blog-box a{
 	text-decoration: none
 }
-
+/*
 .project:hover{
-	/*-webkit-box-shadow: 20px 20px 20px black;*/
+	-webkit-box-shadow: 20px 20px 20px black;
 	background:black;
-}
+}*/
 
 .project {
-	height:350px;
-	width:350px;
-	display:table-cell;
-	margin:10px;
-	/*position:absolute;*/
+	height: 355px;
+	width: 355px;
+	display: inline-block;
+	margin: auto;
+	position: relative;
+	padding: 5px;
+	padding-top: 40px;
 }
-
-.project #snip {
-	height:300px;
-	width:300px;
-	display:inline-block;
-	margin:10px;
-	position:absolute;
-}
-
 
 #social-media-index {
 	height: 85px;

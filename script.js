@@ -22,11 +22,16 @@ $(document).ready(function() {
 
   $("#nav-bar ul li").mouseenter(function() {
     $(this).animate({"font-size":"+=0.5em"})
-  });
-
-  $("#nav-bar ul li").mouseleave(function() {
+  }).mouseleave(function() {
     $(this).animate({"font-size":"-=0.5em"})
   });
+
+  // $(".project img").mouseenter(function(){
+  //   $(this).animate({"height":"+=5px"})
+  //   $(this).animate({"padding":"-=5px"})
+  // }).mouseleave(function(){
+  //   $(this).animate({"height":"-=5px"})
+  // })
 
   // $('.project').mouseenter(function(){
   //   $(this).css("box-shadow","20px 20px 20px black")

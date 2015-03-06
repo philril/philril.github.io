@@ -307,7 +307,7 @@ div {
 
 #personal-intro-about {
 	width: 500px;
-	height: 532px;
+	/*height: 532px;*/
 	position: relative;
 	font-size: 2em;
 	padding: 10px;

@@ -182,8 +182,6 @@ div {
 	display: inline-block;
 	top: 65px;
 	overflow: scroll;
-	/*text-align: center;*/
-	/*letter-spacing:0.25em;*/
 }
 
 #content-index p {
@@ -206,14 +204,9 @@ div {
 }
 
 #content {
-/*	width: 860px;
-	height: 603px;
-	height:75%;*/
 	display: inline-block;
 	top: 65px;
 	overflow: scroll;
-	/*text-align: center;*/
-	/*letter-spacing:0.25em;*/
 	font-size: 1.25em
 }
 
@@ -247,9 +240,6 @@ div {
 }
 
 #sidebar {
-	/*width: 230px; */
-	/* height: 80%; */
-	/* display: inline-block; */
 	top: 65px;
 	overflow: scroll;
 	text-align: center;
@@ -317,20 +307,13 @@ div {
 
 #personal-intro-about {
 	width: 500px;
-	height: 500px;
+	height: 532px;
 	position: relative;
 	font-size: 2em;
 	padding: 10px;
 	display: inline-block;
 	top: -43px;
 }
-
-/*#project-staging {
-	display:table;
-	top:45px;
-	position:relative;
-	margin:0 auto;
-}*/
 
 #blog-box {
 	display:table;
@@ -400,7 +383,6 @@ display: table;
 	width: 60px;
 	height: 60px;
 	padding: 5px;
-	/*margin-left: 92px;*/
 	overflow: hidden;
 	margin:0 auto;
 	overflow:scroll;

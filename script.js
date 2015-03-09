@@ -26,12 +26,30 @@ $(document).ready(function() {
     $(this).animate({"font-size":"-=0.5em"})
   });
 
-  // $(".project img").mouseenter(function(){
-  //   $(this).animate({"height":"+=5px"})
-  //   $(this).animate({"padding":"-=5px"})
-  // }).mouseleave(function(){
-  //   $(this).animate({"height":"-=5px"})
+
+  // $(".project").click(function(event){
+  //   event.preventDefault()
+  //   console.log($(this).find('.project_hide').css({'display':'block'}));
+  // }).click(function(event){
+  //   event.preventDefault()
+  //   console.log($(this).find('.project_hide').css({'display':'hide'}));
+  // });
+
+  // $(".project").click(function(event){
+  //   event.preventDefault()
+  //   $(this).find('img').hide();
   // })
+
+
+
+
+  $(".project").mouseenter(function(){
+    $(this).find('img').hide();
+    $(this).find('.image').css({'display':'inline-block'})
+  }).mouseleave(function(){
+    $(this).find('img').show()
+    $(this).find('.image').css({'display':'none'})
+  })
 
   // $('.project').mouseenter(function(){
   //   $(this).css("box-shadow","20px 20px 20px black")

@@ -196,11 +196,11 @@ div {
 }
 
 #content h1, h2, p, img {
-	margin:5px;
+	/*margin:5px;*/
 }
 
 #content-index h1, h2, p, img {
-	margin:5px;
+	/*margin:5px;*/
 }
 
 #content {
@@ -307,7 +307,6 @@ div {
 
 #personal-intro-about {
 	width: 500px;
-	/*height: 532px;*/
 	position: relative;
 	font-size: 2em;
 	padding: 10px;
@@ -386,4 +385,42 @@ display: table;
 	overflow: hidden;
 	margin:0 auto;
 	overflow:scroll;
+}
+
+.project a {
+	text-decoration: none;
+	color: white
+}
+/*
+.project_hide {
+	width:300px;
+	height:35px;
+	border: 1px solid white;
+	border-radius:10px;
+	background:gray;
+	font-size: 1.75em;
+	display:inline-block;
+}*/
+/*
+.project_buttons {
+	border:1px solid white;
+	height:300px;
+	width: 300px;
+	display: inline-block;
+}*/
+
+.project_hide:hover {
+	box-shadow:10px 10px 20px black
+}
+
+.image:hover {
+	box-shadow:10px 10px 20px black
+}
+
+.image {
+	background:gray;
+	height:350px;
+	width:350px;
+	display:none;
+	text-align: center
 }

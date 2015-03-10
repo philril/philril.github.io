@@ -312,6 +312,7 @@ div {
 	padding: 10px;
 	display: inline-block;
 	top: -43px;
+	text-align: left
 }
 
 #blog-box {
@@ -325,12 +326,13 @@ div {
 }
 
 .project {
-	height: 355px;
-	width: 355px;
+	height: 350;
+	width: 350;
 	display: inline-block;
 	margin: auto;
 	position: relative;
-	padding: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
 	padding-top: 40px;
 }
 
@@ -391,23 +393,24 @@ display: table;
 	text-decoration: none;
 	color: white
 }
-/*
+
 .project_hide {
 	width:300px;
 	height:35px;
 	border: 1px solid white;
 	border-radius:10px;
 	background:gray;
+	margin-bottom: 7px;
 	font-size: 1.75em;
 	display:inline-block;
-}*/
-/*
+}
+
 .project_buttons {
 	border:1px solid white;
 	height:300px;
 	width: 300px;
 	display: inline-block;
-}*/
+}
 
 .project_hide:hover {
 	box-shadow:10px 10px 20px black
@@ -418,9 +421,31 @@ display: table;
 }
 
 .image {
-	background:gray;
+	background:#404040;
 	height:350px;
 	width:350px;
 	display:none;
-	text-align: center
+	/*margin:0;*/
+	padding:0;
+	float:left;
+	position: relative;
 }
+
+.image p {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.image h1 {
+	font-size: 3.25em
+}
+
+.image p {
+	font-size: 1.25em;
+}
+
+/*.img h1 {
+	line-height: 350px;
+	vertical-align:center;
+	text-align: center
+}*/

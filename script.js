@@ -41,11 +41,9 @@ $(document).ready(function() {
   // })
 
 
-
-
   $(".project").mouseenter(function(){
     $(this).find('img').hide();
-    $(this).find('.image').css({'display':'inline-block'})
+    $(this).find('.image').css({'display':'inline'})
   }).mouseleave(function(){
     $(this).find('img').show()
     $(this).find('.image').css({'display':'none'})

@@ -18,12 +18,44 @@ $(document).ready(function() {
   // });
 // END ANIMATE HEIGHT UP_________
 
+  $(window).scroll(function(){
+    var anchors = $('a.anchor')
+    console.log("hey")
+    var position = anchors[0].offset().top
+
+    $('html, body').animate({scrollTop:position}, 'slow');
+  })
 
 
   $("#nav-bar ul li").mouseenter(function() {
     $(this).animate({"font-size":"+=0.5em"})
   }).mouseleave(function() {
     $(this).animate({"font-size":"-=0.5em"})
+  });
+
+
+  $("#github").mouseenter(function() {
+    $('#social-identifier').html("<h2>GitHub</h2>")
+  }).mouseleave(function() {
+    $('#social-identifier').html("")
+  });
+
+  $("#linkedin").mouseenter(function() {
+    $('#social-identifier').html("<h2>LinkedIn</h2>")
+  }).mouseleave(function() {
+    $('#social-identifier').html("")
+  });
+
+  $("#twitter").mouseenter(function() {
+    $('#social-identifier').html("<h2>Twitter</h2>")
+  }).mouseleave(function() {
+    $('#social-identifier').html("")
+  });
+
+  $("#google_plus").mouseenter(function() {
+    $('#social-identifier').html("<h2>Google Plus</h2>")
+  }).mouseleave(function() {
+    $('#social-identifier').html("")
   });
 
 

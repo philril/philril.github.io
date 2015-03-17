@@ -176,6 +176,19 @@ div {
 	text-align: center
 }
 
+.blogroll {
+	background: rgb(163, 161, 161);
+	padding-left: 5px;
+	border-radius:10px;
+	border: 1px solid rgb(90, 89, 89);
+}
+
+.blogroll h1, h2, p {
+	padding:0;
+	margin: 0;
+	text-align: center;
+}
+
 #content-index {
 	width: 700px;
 	height: 511px;
@@ -185,22 +198,11 @@ div {
 }
 
 #content-index p {
-	text-align:left;
 	font-size:1.3em;
-	display: inline-block;
-	/*letter-spacing:0.25em;*/
 }
 
 #content img {
 	text-align:center;
-}
-
-#content h1, h2, p, img {
-	/*margin:5px;*/
-}
-
-#content-index h1, h2, p, img {
-	/*margin:5px;*/
 }
 
 #content {
@@ -232,7 +234,7 @@ div {
 	height: 511px;
 	display: inline-block;
 	top: 65px;
-	overflow: scroll;
+	/*overflow: scroll;*/
 }
 
 #sidebar-index h2 {
@@ -276,8 +278,8 @@ div {
 }
 
 #image2 {
-	width: 500;
-	height: 500px;
+	width: 450;
+	height: 450;
 	position: relative;
 	display: inline-block;
 	border-radius: 100%;
@@ -336,6 +338,10 @@ div {
 	padding-top: 40px;
 }
 
+.project img {
+	border-radius: 10px;
+}
+
 .project img:hover {
 	box-shadow:10px 10px 20px black;
 }
@@ -350,6 +356,10 @@ div {
 	border-radius: 100px;
 	bottom: 4%;
 	position: relative;
+}
+
+#social-media-index:hover{
+	opacity:1;
 }
 
 #social-media-index div {
@@ -429,6 +439,7 @@ display: table;
 	padding:0;
 	float:left;
 	position: relative;
+	border-radius:10px;
 }
 
 .image p {

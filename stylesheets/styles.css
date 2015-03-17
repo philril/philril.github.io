@@ -212,6 +212,10 @@ div {
 	font-size: 1.25em
 }
 
+#content p {
+	text-align: left
+}
+
 #contact {
 	width: 900px;
 	height: 300px;

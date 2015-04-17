@@ -1,4 +1,4 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
   // $("#personal-intro").css({"opacity":"0"})
   // $("#index-title").css({"opacity":"0"})
@@ -18,13 +18,13 @@ $(document).ready(function() {
   // });
 // END ANIMATE HEIGHT UP_________
 
-  $(window).scroll(function(){
-    var anchors = $('a.anchor')
-    console.log("hey")
-    var position = anchors[0].offset().top
+  // $(window).scroll(function(){
+  //   var anchors = $('a.anchor')
+  //   // console.log("hey")
+  //   var position = anchors[0].offset().top
 
-    $('html, body').animate({scrollTop:position}, 'slow');
-  })
+  //   $('html, body').animate({scrollTop:position}, 'slow');
+  // })
 
 
   $("#nav-bar ul li").mouseenter(function() {
@@ -58,6 +58,12 @@ $(document).ready(function() {
     $('#social-identifier').html("")
   });
 
+  $("#navy").affix({
+      offset: {
+            top: 100
+        }
+  });
+
 
   // $(".project").click(function(event){
   //   event.preventDefault()
@@ -89,4 +95,4 @@ $(document).ready(function() {
   //   $(this).css("box-shadow","")
   // });
 
-});
+// });

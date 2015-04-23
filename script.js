@@ -59,9 +59,9 @@
   });
 
   $("#navy").affix({
-      offset: {
-            top: 100
-        }
+    offset: {
+      top: 100
+    }
   });
 
 
